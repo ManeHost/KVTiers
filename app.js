@@ -8,7 +8,7 @@ function getPoints(player) {
     let total = 0;
     for (const mode of GAMEMODES) {
         const tier = player.tiers[mode.id];
-        if (tier && TIER_POINTS[tier]) {
+        if (tier && tier !== "none" && TIER_POINTS[tier]) {
             total += TIER_POINTS[tier];
         }
     }
@@ -57,7 +57,7 @@ function getSortedPlayers() {
         list.sort((a, b) => getPoints(b) - getPoints(a));
     } else {
         // Sort by tier in this mode (best first), then by points
-        list = list.filter(p => p.tiers[currentMode]);
+        list = list.filter(p => p.tiers[currentMode] && p.tiers[currentMode] !== "none");
         list.sort((a, b) => {
             const ta = TIER_ORDER.indexOf(a.tiers[currentMode] || "LT5");
             const tb = TIER_ORDER.indexOf(b.tiers[currentMode] || "LT5");
@@ -187,7 +187,7 @@ function openModal(player) {
     const tiersContainer = document.getElementById("modalTiers");
     tiersContainer.innerHTML = GAMEMODES.map(mode => {
         const tier = player.tiers[mode.id];
-        if (!tier) {
+        if (!tier || tier === "none") {
             return `
                 <div class="modal-tier-item" style="opacity:0.4">
                     <span class="mode-icon-lg">${mode.icon}</span>
