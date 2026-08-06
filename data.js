@@ -1,5 +1,4 @@
 // ===== GAMEMODES (20 tiers) =====
-// icon = Minecraft-style emoji / symbol
 const GAMEMODES = [
   { id: "beast", name: "Beast", icon: "🦁", short: "Beast" },
   { id: "dpot", name: "Dpot", icon: "💎", short: "Dpot" },
@@ -20,172 +19,75 @@ const GAMEMODES = [
   { id: "shieldsuhc", name: "Shields UHC", icon: "🛡️", short: "ShUHC" },
   { id: "elytramace", name: "Elytra Mace", icon: "🪽", short: "EMace" },
   { id: "lifesteal", name: "Lifesteal", icon: "💉", short: "LS" },
-  { id: "spearsmp", name: "Spear SMP", icon: "⚔️", short: "SSMP" },
+  { id: "spearsmp", name: "Spear SMP", icon: "⚔️", short: "SSMP" }
 ];
 
-// Tier order for points calculation (higher = better)
 const TIER_POINTS = {
-  HT1: 60,
-  LT1: 45,
-  HT2: 30,
-  LT2: 20,
-  HT3: 10,
-  LT3: 6,
-  HT4: 4,
-  LT4: 3,
-  HT5: 2,
-  LT5: 1,
+  HT1: 60, LT1: 45,
+  HT2: 30, LT2: 20,
+  HT3: 10, LT3: 6,
+  HT4: 4,  LT4: 3,
+  HT5: 2,  LT5: 1
 };
 
-const TIER_ORDER = [
-  "HT1",
-  "LT1",
-  "HT2",
-  "LT2",
-  "HT3",
-  "LT3",
-  "HT4",
-  "LT4",
-  "HT5",
-  "LT5",
-];
+const TIER_ORDER = ["HT1","LT1","HT2","LT2","HT3","LT3","HT4","LT4","HT5","LT5"];
 
-// ===== PLAYERS DATA =====
-// To add a new player — copy an object and fill the fields.
-// tiers: { gamemodeId: "HT1" | "LT2" | ... }
+// ===== PLAYERS =====
 const PLAYERS = [
   {
     name: "Cr1m3",
     region: "UK",
-    uuid: "f6a1e0c0-8b3a-4f2e-9c1d-7e5a6b8c9d0e", // optional, for skin
     tiers: {
-      beast: "HT1",
-      dpot: "HT1",
-      npot: "HT1",
-      dsmp: "HT1",
-      nsmp: "LT1",
-      uhc: "HT1",
-      axe: "HT1",
-      crystal: "LT1",
-      cart: "HT1",
-      mace: "LT1",
-      op: "LT1",
-      creeper: "",
-      spearmace: "",
-      spearelytra: "",
-      rodmace: "",
-      trident: "",
-      shieldsuhc: "",
-      elytramace: "",
-      lifesteal: "",
-      spearsmp: "",
-    },
+      beast: "HT1", dpot: "HT1", npot: "HT1", dsmp: "HT1", nsmp: "LT1",
+      uhc: "HT1", axe: "HT1", crystal: "LT1", cart: "HT1", mace: "LT1",
+      op: "LT1", creeper: "none", spearmace: "none", spearelytra: "none",
+      rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
+      lifesteal: "none", spearsmp: "none"
+    }
   },
   {
     name: "Comonyat",
     region: "UK",
-    uuid: "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
     tiers: {
-      beast: "HT1",
-      dpot: "LT1",
-      npot: "HT2",
-      dsmp: "LT1",
-      nsmp: "LT1",
-      uhc: "LT1",
-      axe: "LT1",
-      crystal: "HT1",
-      cart: "LT1",
-      mace: "HT1",
-      op: "HT2",
-      creeper: "",
-      spearmace: "",
-      spearelytra: "",
-      rodmace: "",
-      trident: "",
-      shieldsuhc: "",
-      elytramace: "",
-      lifesteal: "",
-      spearsmp: "",
-    },
+      beast: "HT1", dpot: "LT1", npot: "HT2", dsmp: "LT1", nsmp: "LT1",
+      uhc: "LT1", axe: "LT1", crystal: "HT1", cart: "LT1", mace: "HT1",
+      op: "HT2", creeper: "none", spearmace: "none", spearelytra: "none",
+      rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
+      lifesteal: "none", spearsmp: "none"
+    }
   },
   {
     name: "SuperiorRasul",
     region: "KZ",
     tiers: {
-      beast: "LT1",
-      dpot: "LT1",
-      npot: "HT1",
-      dsmp: "LT1",
-      nsmp: "HT1",
-      uhc: "LT1",
-      axe: "LT1",
-      crystal: "LT2",
-      cart: "HT2",
-      mace: "LT1",
-      op: "HT1",
-      creeper: "",
-      spearmace: "",
-      spearelytra: "",
-      rodmace: "",
-      trident: "",
-      shieldsuhc: "",
-      elytramace: "",
-      lifesteal: "",
-      spearsmp: "",
-    },
+      beast: "LT1", dpot: "LT1", npot: "HT1", dsmp: "LT1", nsmp: "HT1",
+      uhc: "LT1", axe: "LT1", crystal: "LT2", cart: "HT2", mace: "LT1",
+      op: "HT1", creeper: "none", spearmace: "none", spearelytra: "none",
+      rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
+      lifesteal: "none", spearsmp: "none"
+    }
   },
-   {
+  {
     name: "CAHTA___KLAYS",
     region: "RU",
-    uuid: "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
     tiers: {
-      beast: "LT3",
-      dpot: "LT3",
-      npot: "HT3",
-      dsmp: "LT1",
-      nsmp: "HT2",
-      uhc: "HT1",
-      axe: "LT2",
-      crystal: "HT4",
-      cart: "HT4",
-      mace: "LT2",
-      op: "HT3",
-      creeper: "",
-      spearmace: "",
-      spearelytra: "",
-      rodmace: "",
-      trident: "",
-      shieldsuhc: "",
-      elytramace: "",
-      lifesteal: "",
-      spearsmp: "",
-    },
+      beast: "LT3", dpot: "LT3", npot: "HT3", dsmp: "LT1", nsmp: "HT2",
+      uhc: "HT1", axe: "LT2", crystal: "HT4", cart: "HT4", mace: "LT2",
+      op: "HT3", creeper: "none", spearmace: "none", spearelytra: "none",
+      rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
+      lifesteal: "none", spearsmp: "none"
+    }
   },
-   {
+  {
     name: "MN576",
-    region: "UK",
-    uuid: "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    region: "RU",
     tiers: {
-      beast: "LT3",
-      dpot: "LT3",
-      npot: "LT3",
-      dsmp: "LT3",
-      nsmp: "LT3",
-      uhc: "HT3",
-      axe: "LT3",
-      crystal: "HT4",
-      cart: "HT4",
-      mace: "HT3",
-      op: "LT3",
-      creeper: "",
-      spearmace: "",
-      spearelytra: "",
-      rodmace: "",
-      trident: "",
-      shieldsuhc: "",
-      elytramace: "",
-      lifesteal: "",
-      spearsmp: "",
-    },
-  },
+      beast: "LT3", dpot: "LT3", npot: "LT3", dsmp: "LT3", nsmp: "LT3",
+      uhc: "HT3", axe: "LT3", crystal: "HT4", cart: "HT4", mace: "HT3",
+      op: "LT3", creeper: "none", spearmace: "none", spearelytra: "none",
+      rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
+      lifesteal: "none", spearsmp: "none"
+    }
+  }
 ];
+      
