@@ -50,7 +50,7 @@ const PLAYERS = [
     region: "UK",
     tiers: {
       beast: "HT1", dpot: "LT1", npot: "HT2", dsmp: "LT1", nsmp: "LT1",
-      uhc: "LT1", axe: "LT1", crystal: "HT1", cart: "LT1", mace: "HT1",
+      uhc: "LT1", axe: "HT1", crystal: "HT1", cart: "LT1", mace: "HT1",
       op: "HT2", creeper: "none", spearmace: "none", spearelytra: "none",
       rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
       lifesteal: "none", spearsmp: "none"
@@ -72,7 +72,7 @@ const PLAYERS = [
     region: "RU",
     tiers: {
       beast: "LT3", dpot: "LT3", npot: "HT3", dsmp: "LT1", nsmp: "HT2",
-      uhc: "HT1", axe: "LT2", crystal: "HT4", cart: "HT4", mace: "LT2",
+      uhc: "HT1", axe: "LT1", crystal: "HT4", cart: "HT4", mace: "LT2",
       op: "HT3", creeper: "none", spearmace: "none", spearelytra: "none",
       rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
       lifesteal: "none", spearsmp: "none"
