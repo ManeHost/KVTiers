@@ -13,16 +13,16 @@
     --text: #f3e8ff;
     --text-muted: #a78bfa;
     --text-dim: #6b5b8a;
-    --ht1: #ff2d55;
-    --ht2: #ff6b35;
-    --ht3: #ffcc00;
-    --ht4: #34c759;
-    --ht5: #5ac8fa;
-    --lt1: #ff6482;
-    --lt2: #ff8f66;
-    --lt3: #ffe066;
-    --lt4: #6ee7b7;
-    --lt5: #93c5fd;
+    --ht1: #b9f2ff;
+    --lt1: #b9f2ff;
+    --ht2: #ffd700;
+    --lt2: #ffd700;
+    --ht3: #c0c0c0;
+    --lt3: #c0c0c0;
+    --ht4: #a16207;
+    --lt4: #a16207;
+    --ht5: #a16207;
+    --lt5: #a16207;
     --radius: 10px;
     --shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
 }
@@ -385,17 +385,44 @@ body {
     letter-spacing: 0.3px;
 }
 
-/* Tier colors */
-.tier-HT1 { border-color: var(--ht1); color: var(--ht1); background: rgba(255, 45, 85, 0.12); }
-.tier-LT1 { border-color: var(--lt1); color: var(--lt1); background: rgba(255, 100, 130, 0.12); }
-.tier-HT2 { border-color: var(--ht2); color: var(--ht2); background: rgba(255, 107, 53, 0.12); }
-.tier-LT2 { border-color: var(--lt2); color: var(--lt2); background: rgba(255, 143, 102, 0.12); }
-.tier-HT3 { border-color: var(--ht3); color: var(--ht3); background: rgba(255, 204, 0, 0.12); }
-.tier-LT3 { border-color: var(--lt3); color: var(--lt3); background: rgba(255, 224, 102, 0.12); }
-.tier-HT4 { border-color: var(--ht4); color: var(--ht4); background: rgba(52, 199, 89, 0.12); }
-.tier-LT4 { border-color: var(--lt4); color: var(--lt4); background: rgba(110, 231, 183, 0.12); }
-.tier-HT5 { border-color: var(--ht5); color: var(--ht5); background: rgba(90, 200, 250, 0.12); }
-.tier-LT5 { border-color: var(--lt5); color: var(--lt5); background: rgba(147, 197, 253, 0.12); }
+/* ===== Цвета тиров ===== */
+
+/* Бриллиант — HT1 и LT1 одинаковые */
+.tier-HT1,
+.tier-LT1 {
+    border-color: #b9f2ff;
+    color: #e0f7ff;
+    background: rgba(185, 242, 255, 0.18);
+    box-shadow: 0 0 8px rgba(185, 242, 255, 0.35);
+}
+
+/* Золото — HT2 и LT2 одинаковые */
+.tier-HT2,
+.tier-LT2 {
+    border-color: #ffd700;
+    color: #fef08a;
+    background: rgba(255, 215, 0, 0.18);
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+}
+
+/* Серебро — HT3 и LT3 одинаковые */
+.tier-HT3,
+.tier-LT3 {
+    border-color: #c0c0c0;
+    color: #e5e5e5;
+    background: rgba(192, 192, 192, 0.18);
+    box-shadow: 0 0 6px rgba(192, 192, 192, 0.25);
+}
+
+/* Коричневый — HT4, LT4, HT5, LT5 одинаковые */
+.tier-HT4,
+.tier-LT4,
+.tier-HT5,
+.tier-LT5 {
+    border-color: #a16207;
+    color: #fbbf24;
+    background: rgba(161, 98, 7, 0.2);
+}
 
 /* Single mode view */
 .single-tier {
