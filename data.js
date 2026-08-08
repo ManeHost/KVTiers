@@ -88,7 +88,7 @@ const PLAYERS = [
       rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
       lifesteal: "none", spearsmp: "none"
     }
-  }
+  },
   {
     name: "nxdt",
     region: "UA",
