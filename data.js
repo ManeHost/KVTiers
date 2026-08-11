@@ -113,7 +113,7 @@ const PLAYERS = [
     },
   {
     name: "v1rse4",
-    region: "UA",
+    region: "RU",
     tiers: {
       beast: "HT1", dpot: "HT1", npot: "HT1", dsmp: "HT1", nsmp: "HT1",
       uhc: "HT1", axe: "HT1", crystal: "HT1", cart: "HT1", mace: "HT1",
