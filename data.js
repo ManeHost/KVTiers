@@ -110,6 +110,17 @@ const PLAYERS = [
       rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
       lifesteal: "none", spearsmp: "none"
     }
+    },
+  {
+    name: "v1rse4",
+    region: "UA",
+    tiers: {
+      beast: "HT1", dpot: "HT1", npot: "HT1", dsmp: "HT1", nsmp: "HT1",
+      uhc: "HT1", axe: "HT1", crystal: "HT1", cart: "HT1", mace: "HT1",
+      op: "HT1", creeper: "HT1", spearmace: "HT1", spearelytra: "HT1",
+      rodmace: "HT1", trident: "HT1", shieldsuhc: "HT1", elytramace: "HT1",
+      lifesteal: "HT1", spearsmp: "HT1"
+    }
 }
 ];
 
