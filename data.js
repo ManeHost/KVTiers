@@ -42,7 +42,7 @@ const PLAYERS = [
       uhc: "HT1", axe: "HT1", crystal: "LT1", cart: "HT1", mace: "LT1",
       op: "LT1", creeper: "none", spearmace: "none", spearelytra: "none",
       rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
-      lifesteal: "none", spearsmp: "none"
+      lifesteal: "LT1", spearsmp: "none"
     }
   },
   {
@@ -51,9 +51,9 @@ const PLAYERS = [
     tiers: {
       beast: "HT1", dpot: "LT1", npot: "HT2", dsmp: "LT1", nsmp: "LT1",
       uhc: "LT1", axe: "HT1", crystal: "HT1", cart: "LT1", mace: "HT1",
-      op: "HT2", creeper: "none", spearmace: "none", spearelytra: "none",
+      op: "HT2", creeper: "LT2", spearmace: "none", spearelytra: "none",
       rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
-      lifesteal: "none", spearsmp: "none"
+      lifesteal: "LT1", spearsmp: "none"
     }
   },
   {
@@ -62,9 +62,9 @@ const PLAYERS = [
     tiers: {
       beast: "HT1", dpot: "LT1", npot: "HT1", dsmp: "LT1", nsmp: "HT1",
       uhc: "LT1", axe: "LT1", crystal: "HT3", cart: "HT2", mace: "LT1",
-      op: "HT1", creeper: "none", spearmace: "none", spearelytra: "none",
+      op: "HT1", creeper: "HT3", spearmace: "none", spearelytra: "none",
       rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
-      lifesteal: "none", spearsmp: "none"
+      lifesteal: "LT2", spearsmp: "none"
     }
   },
   {
@@ -73,7 +73,7 @@ const PLAYERS = [
     tiers: {
       beast: "HT3", dpot: "LT3", npot: "HT3", dsmp: "LT1", nsmp: "LT2",
       uhc: "HT1", axe: "LT1", crystal: "LT2", cart: "HT3", mace: "LT2",
-      op: "HT3", creeper: "none", spearmace: "none", spearelytra: "none",
+      op: "HT3", creeper: "LT1", spearmace: "none", spearelytra: "none",
       rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
       lifesteal: "none", spearsmp: "none"
     }
@@ -104,9 +104,9 @@ const PLAYERS = [
     name: "0993472",
     region: "UA",
     tiers: {
-      beast: "LT3", dpot: "HT4", npot: "HT4", dsmp: "HT4", nsmp: "HT4",
-      uhc: "LT4", axe: "LT4", crystal: "LT4", cart: "none", mace: "LT3",
-      op: "HT4", creeper: "none", spearmace: "none", spearelytra: "none",
+      beast: "none", dpot: "none", npot: "none", dsmp: "none", nsmp: "none",
+      uhc: "none", axe: "none", crystal: "none", cart: "none", mace: "none",
+      op: "none", creeper: "none", spearmace: "none", spearelytra: "none",
       rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
       lifesteal: "none", spearsmp: "none"
     }
