@@ -82,11 +82,11 @@ const PLAYERS = [
     name: "MN576",
     region: "RU",
     tiers: {
-      beast: "LT3", dpot: "LT3", npot: "LT3", dsmp: "LT3", nsmp: "LT3",
+      beast: "HT3", dpot: "LT3", npot: "LT3", dsmp: "LT3", nsmp: "LT3",
       uhc: "HT3", axe: "LT3", crystal: "HT4", cart: "HT4", mace: "HT3",
-      op: "LT3", creeper: "none", spearmace: "none", spearelytra: "none",
+      op: "LT3", creeper: "LT2", spearmace: "none", spearelytra: "none",
       rodmace: "none", trident: "none", shieldsuhc: "none", elytramace: "none",
-      lifesteal: "none", spearsmp: "none"
+      lifesteal: "none", spearsmp: "LT2"
     }
   },
   {
